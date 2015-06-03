@@ -8,7 +8,7 @@ public class BackButtonView : MonoBehaviour {
 	public Button backButton;
 
 	void Awake(){
-		LoadingView[] gmo = GameObject.FindObjectsOfType<LoadingView>();
+		BackButtonView[] gmo = GameObject.FindObjectsOfType<BackButtonView>();
 		if(gmo.Length>1){
 			DestroyImmediate(this.gameObject);
 		}
